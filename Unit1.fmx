@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 216
+  ClientWidth = 210
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Size.Width = 209.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object titulo: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Calculadora de Suma'
+      TabOrder = 0
+    end
+    object pideNum1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Numero 1:'
+      TabOrder = 1
+    end
+    object PideNum2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Numero 2:'
+      TabOrder = 2
+    end
+    object guardaNum1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 80.000000000000000000
+      Position.Y = 28.000000000000000000
+    end
+    object guardaNum2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 80.000000000000000000
+      Position.Y = 53.000000000000000000
+    end
+    object MuestraOperation: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 83.000000000000000000
+      TabOrder = 5
+      Text = 'Resultado:'
+      OnClick = MuestraOperationClick
+    end
+    object muestraResult: TLabel
+      Position.X = 96.000000000000000000
+      Position.Y = 88.000000000000000000
+      TabOrder = 6
+    end
+  end
+end
